@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+    const arr=["dogs","cats","rabbits","mice"]
+ arr.forEach(element => {
+    if(element.includes('a')){
+        console.log(element,":true")
+    }
+    else{
+        console.log(element,":false")
+    }
+ });
+const newarr=arr.filter(element=>element.includes('a'))
+console.log(newarr)
+</script>
+</html>
