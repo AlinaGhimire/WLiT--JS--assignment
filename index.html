@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Change Text Color</title>
+</head>
+<body>
+    <div> 
+        <label for="colorInput">Enter a color</label>
+          <input type="text"id="colorInput">
+          <button
+       onclick="changeColor()">
+    Change Color</button>
+    </div>
+    <div id="textDiv">
+        Change color according to your choice.
+    </div>
+    <script>
+        const container=document.getElementById('div1');
+        function changeColor(){
+    const color =document.getElementById("colorInput").value;
+    document.getElementById("textDiv").style.colour=color;
+        }
+    </script>
+</body>
+</html>
